@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"><!-- <![endif]-->
+
+<head>
+  <title>🎉 Happy Birthday Nuru! 🎉</title>
+  <meta charset="UTF-8" />
+  
+  <meta property="og:type" content="E-Greeting" />
+  <meta property="og:image" content="favicon.ico" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta property="og:description" content="Wish you a very Happy Birthday">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="loading.css">
+  <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet/less" href="cake.less">
+  
+  <!-- Enhanced Birthday Styling -->
+  <style>
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+    
+    .birthday-header {
+      text-align: center;
+      padding: 2rem 0;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .birthday-header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #ffe66d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .birthday-header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    
+    .enhanced-balloons {
+      position: relative;
+      margin: 2rem 0;
+    }
+    
+    .balloon {
+      display: inline-block;
+      margin: 0 10px;
+      animation: floatBalloon 4s ease-in-out infinite;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .balloon:hover {
+      transform: scale(1.2);
+    }
+    
+    .balloon:nth-child(1) { animation-delay: 0s; }
+    .balloon:nth-child(2) { animation-delay: 0.5s; }
+    .balloon:nth-child(3) { animation-delay: 1s; }
+    .balloon:nth-child(4) { animation-delay: 1.5s; }
+    .balloon:nth-child(5) { animation-delay: 2s; }
+    .balloon:nth-child(6) { animation-delay: 2.5s; }
+    .balloon:nth-child(7) { animation-delay: 3s; }
+    
+    @keyframes floatBalloon {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+    }
+    
+    .enhanced-marquee {
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+      color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      margin: 2rem 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .enhanced-marquee marquee {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    
+    .enhanced-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .enhanced-bulbs {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .enhanced-cake {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    
+    .enhanced-cake .cake {
+      display: inline-block !important;
+      animation: cakeGlow 3s ease-in-out infinite;
+    }
+    
+    @keyframes cakeGlow {
+      0%, 100% { filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); }
+      50% { filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8)); }
+    }
+    
+    .enhanced-message {
+      text-align: center;
+      color: white;
+      font-size: 1.3rem;
+      margin: 2rem 0;
+      padding: 2rem;
+      background: linear-gradient(45deg, rgba(255, 107, 107, 0.2), rgba(78, 205, 196, 0.2));
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .enhanced-navbar {
+      background: rgba(0, 0, 0, 0.8) !important;
+      backdrop-filter: blur(20px);
+      border-top: 2px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .enhanced-btn {
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4) !important;
+      border: none !important;
+      border-radius: 25px !important;
+      color: white !important;
+      padding: 12px 24px !important;
+      font-weight: 600 !important;
+      margin: 5px !important;
+      transition: all 0.3s ease !important;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+    }
+    
+    .enhanced-btn:hover {
+      transform: translateY(-3px) !important;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
+    }
+    
+    .next-button {
+      background: linear-gradient(45deg, #ffe66d, #ff8e53) !important;
+      color: #333 !important;
+      font-size: 1.2rem !important;
+      padding: 15px 30px !important;
+      border-radius: 30px !important;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    
+    .floating-hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1000;
+    }
+    
+    .floating-heart {
+      position: absolute;
+      font-size: 1.5rem;
+      animation: floatHeart 6s ease-in-out infinite;
+      opacity: 0.7;
+    }
+    
+    @keyframes floatHeart {
+      0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      10% { opacity: 0.7; }
+      90% { opacity: 0.7; }
+      100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+    }
+    
+    .heart-1 { left: 5%; animation-delay: 0s; }
+    .heart-2 { left: 20%; animation-delay: 1s; }
+    .heart-3 { left: 35%; animation-delay: 2s; }
+    .heart-4 { left: 50%; animation-delay: 3s; }
+    .heart-5 { left: 65%; animation-delay: 4s; }
+    .heart-6 { left: 80%; animation-delay: 5s; }
+    .heart-7 { left: 95%; animation-delay: 6s; }
+    
+    @media (max-width: 768px) {
+      .birthday-header h1 {
+        font-size: 2rem;
+      }
+      
+      .enhanced-btn {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+        margin: 3px !important;
+      }
+      
+      .enhanced-container {
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+    }
+  </style>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+</head>
+
+<body>
+  <!-- Loading Animation -->
+  <div class="loading"></div>
+  
+  <!-- Floating Hearts Background -->
+  <div class="floating-hearts">
+    <div class="floating-heart heart-1">💖</div>
+    <div class="floating-heart heart-2">💕</div>
+    <div class="floating-heart heart-3">💗</div>
+    <div class="floating-heart heart-4">💓</div>
+    <div class="floating-heart heart-5">💝</div>
+    <div class="floating-heart heart-6">💘</div>
+    <div class="floating-heart heart-7">💞</div>
+  </div>
+  
+  <!-- Audio Player -->
+  <audio class="song" controls loop>
+    <source src="hbd.mp3">
+    </source>
+    Your browser isn't invited for super fun audio time.
+  </audio>
+  
+  <!-- Birthday Header -->
+  <div class="birthday-header">
+    <h1>🎉 Happy Birthday Nuru! 🎉</h1>
+    <p>Today is your special day - let's celebrate! 🎂✨</p>
+  </div>
+  
+  <!-- Enhanced Balloons -->
+  <div class="enhanced-balloons text-center">
+    <div class="balloon" id="b1">
+      <h4 style="color:#F2B300;">🎈</h4>
+    </div>
+    <div class="balloon" id="b2">
+      <h4 style="color:#0719D4;">🎉</h4>
+    </div>
+    <div class="balloon" id="b3">
+      <h4 style="color:#D14D39;">🎊</h4>
+    </div>
+    <div class="balloon" id="b4">
+      <h4 style="color:#8FAD00;">🎁</h4>
+    </div>
+    <div class="balloon" id="b5">
+      <h4 style="color:#8377E4;">🎂</h4>
+    </div>
+    <div class="balloon" id="b6">
+      <h4 style="color:#99C96A;">✨</h4>
+    </div>
+    <div class="balloon" id="b7">
+      <h4 style="color:#20CFB4;">🌟</h4>
+    </div>
+  </div>
+  
+  <!-- Enhanced Marquee -->
+  <div class="enhanced-marquee">
+    <marquee width="100%" direction="right" height="30%" id="colormarq">
+      🎂 Happy Birthday Nuru! 🎂 May your day be filled with joy and laughter! 🎉
+    </marquee>
+  </div>
+  
+  <!-- Balloon Border -->
+  <img src="Balloon-Border.png" width="100%" class="balloon-border">
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Enhanced Bulbs Section -->
+    <div class="enhanced-bulbs">
+      <div class="row">
+        <div class="col-md-2 col-xs-2 bulb-holder">
+          <div class="bulb" id="bulb_yellow"></div>
+        </div>
+        <div class="col-md-2 col-xs-2 bulb-holder">
+          <div class="bulb" id="bulb_red"></div>
+        </div>
+        <div class="col-md-2 col-xs-2 bulb-holder">
+          <div class="bulb" id="bulb_blue"></div>
+        </div>
+        <div class="col-md-2 col-xs-2 bulb-holder">
+          <div class="bulb" id="bulb_green"></div>
+        </div>
+        <div class="col-md-2 col-xs-2 bulb-holder">
+          <div class="bulb" id="bulb_pink"></div>
+        </div>
+        <div class="col-md-2 col-xs-2 bulb-holder">
+          <div class="bulb" id="bulb_orange"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Banner Section -->
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <img src="banner.png" class="bannar">
+      </div>
+    </div>
+  
+    <!-- Enhanced Cake Section -->
+    <div class="enhanced-cake">
+      <div class="row cake-cover">
+        <div class="col-md-12 text-center">
+          <div class="cake">
+            <div class="velas">
+              <div class="fuego"></div>
+              <div class="fuego"></div>
+              <div class="fuego"></div>
+              <div class="fuego"></div>
+              <div class="fuego"></div>
+            </div>
+            <div class="cobertura"></div>
+            <div class="bizcocho"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Enhanced Message Section -->
+    <div class="enhanced-message">
+      <p>💖 Love You, thank you for being you 💖</p>
+      <p>You make every day brighter just by being in it! ✨</p>
+    </div>
+    
+    <!-- Enhanced Navigation -->
+    <div class="navbar navbar-fixed-bottom enhanced-navbar">
+      <div class="row">
+        <div class="col-md-6 text-center col-md-offset-3">
+          <button class="btn enhanced-btn" id="turn_on">💡 Turn On Lights</button>
+          <button class="btn enhanced-btn" id="play">🎵 Play Music</button>
+          <button class="btn enhanced-btn" id="bannar_coming">🎨 Let's Decorate</button>
+          <button class="btn enhanced-btn" id="balloons_flying">🎈 Fly With Balloons</button>
+          <button class="btn enhanced-btn" id="cake_fadein">🍰 Most Delicious Cake Ever</button>
+          <button class="btn enhanced-btn" id="light_candle">🕯️ Light Candle</button>
+          <button class="btn enhanced-btn" id="wish_message">🎂 Happy Birthday Nuru</button>
+          <button class="btn enhanced-btn" id="story">💌 A message for you</button>
+
+          <a href="game4.html">
+            <button id="nextButton" class="btn enhanced-btn next-button" style="display: none;">
+              🎯 Next Page
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="effect.js"></script>
+  
+  <!-- Enhanced Birthday Effects -->
+  <script>
+    // Add some extra birthday magic
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add click effects to balloons
+      document.querySelectorAll('.balloon').forEach(balloon => {
+        balloon.addEventListener('click', function() {
+          this.style.transform = 'scale(1.3) rotate(360deg)';
+          setTimeout(() => {
+            this.style.transform = 'scale(1) rotate(0deg)';
+          }, 500);
+        });
+      });
+      
+      // Add sparkle effect to buttons
+      document.querySelectorAll('.enhanced-btn').forEach(btn => {
+        btn.addEventListener('mouseenter', function() {
+          this.style.animation = 'pulse 0.5s ease-in-out';
+        });
+        
+        btn.addEventListener('mouseleave', function() {
+          this.style.animation = '';
+        });
+      });
+      
+      // Auto-play music after user interaction
+      document.addEventListener('click', function() {
+        const audio = document.querySelector('.song');
+        if (audio.paused) {
+          audio.play().catch(e => console.log('Audio autoplay prevented'));
+        }
+      }, { once: true });
+    });
+    
+    // Google Analytics
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-58229732-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
